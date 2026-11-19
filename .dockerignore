@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yml
+.dockerignore
+.git
+.DS_Store
+*.md
+backup

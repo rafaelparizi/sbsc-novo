@@ -1,0 +1,8 @@
+services:
+  site-cesc:
+    build: .
+    image: site-cesc:latest
+    container_name: site-cesc
+    ports:
+      - "8080:80"
+    restart: unless-stopped

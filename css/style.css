@@ -500,6 +500,7 @@ p { margin: 0 0 1em; }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px;
   max-width: 1040px; margin: 0 auto; padding: 0; list-style: none;
 }
+.membros-grid:not(.tres) { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 1018px; }
 .membros-grid.tres { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 760px; }
 .membro-card {
   position: relative; background: #fff; border-radius: 18px; text-align: center;
@@ -528,6 +529,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) {
   .coordenacao { grid-template-columns: 1fr; max-width: 520px; }
   .membros-grid.tres { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+  .membros-grid:not(.tres) { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 540px; }
 }
 @media (max-width: 480px) {
   .gestao-cabec h2 { font-size: 26px; }
